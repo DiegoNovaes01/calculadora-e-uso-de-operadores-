@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+</head>
+
+<style>
+    body {
+background-color: rgb(31, 7, 54);
+color: wheat;
+font: normal 18pt arial ;
+}
+
+</style>
+<body>
+    <h1>Iniciando Primeiros passos com o DOM   </h1>      
+        <p>Aqui vai o resilvado</p>
+        <p>Aprendendo a usar o <Strong>DOM</Strong> </p>
+        <div id ='1'>Clique em mim <strong>mim</strong></div>
+        <script>
+            
+            var p1 = window.document.getElementsByTagName('p')[1]
+            var corpo = window.document.body
+            var d = window.document.querySelector('div#msg')
+           window.document.write(window.document.URL)  
+          window.document.write("esta descrito <br><br>" + p1.innerText)
+          window.document.write("<br>ola")
+          corpo.style.background = "black"
+          p1.style.color = "green"
+            d.style.color = "yellow"
+
+          //documento.write(p1.innerHTML)
+          window.document.write("esta descrito <br><br>" + d.innerText)
+         
+          </script>
+</html>
